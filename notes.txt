@@ -1,0 +1,65 @@
+scanning
+    lexer
+    token
+
+parsing
+    grammer
+    parser
+    parse tree or abstract syntax tree
+
+static analysis
+    binding or resolution 
+    symbol table
+
+intermediate representation
+    
+optimization
+    constant folding
+
+code generation
+    bytecode
+
+virtual machine
+
+runtime
+
+-----
+
+Types of implementations for interpreters and compilers
+single-pass compilers
+tree walk interpreters
+transpilers
+just-in-time compilers
+
+
+Programming language implementation guide
+
+1. Scanner
+produce tokens from text
+error handling
+    show line number and column for error
+    even better show the offending line:
+       `Error: Unexpected "," in argument list.
+
+        15 | function(first, second,);
+                               ^-- Here.  
+        `
+separate error genearting and reporting in implementation
+    don't keep it in the scanner and parser code
+lexeme
+token: lexeme with some information
+
+regular language and expressions
+    lexical grammer
+    can recognize all of the different lexemes for Lox using regexes 
+        there is alot of theory underlying here (chomsky hierarchy and finite state machines)
+    tools like "github.com/westes/flex" allow to do this
+
+error reporting in scanner should happen once, not once every time
+    scan full file everytime, instead of throwing error if found one error
+
+
+
+
+
+
