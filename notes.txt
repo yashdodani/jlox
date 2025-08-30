@@ -58,6 +58,9 @@ regular language and expressions
 error reporting in scanner should happen once, not once every time
     scan full file everytime, instead of throwing error if found one error
 
+maximul munch: when two lexical grammer rules can both match a chunk of code, whichever one matches the most character wins.
+
+
 
 
 
